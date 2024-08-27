@@ -15,18 +15,18 @@ async function getMessage() {
     const options = {
         method: 'POST',
         headers: {
-            'Authorization': `Bearer ${API_KEY}`, // Corrected to use backticks and added the missing quote
+            'Authorization': `Bearer ${API_KEY}`,
             'Content-Type': 'application/json',
         },
         body: JSON.stringify({
             model: "gpt-3.5-turbo",
-            messages: [{role: "user", content: inputElement.value}], // Added missing comma here
+            messages: [{role: "user", content: inputElement.value}], 
             max_tokens: 100
         })
     };
 
     try {
-        const response = await fetch('https://api.openai.com/v1/chat/completions', options); // Passed options to fetch
+        const response = await fetch('https://api.openai.com/v1/chat/completions', options); 
         const data = await response.json();
         console.log(data);
         outPutElement.textContent = data.choices[0].message.content
