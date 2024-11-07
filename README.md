@@ -13,7 +13,7 @@ This repository contains the code for a ChatGPT-like conversational AI applicati
 **License
 **
 Distributed under the MIT License. See LICENSE for more information.
-**
-Acknowledgments
-**
+
+
+**Acknowledgments**
 Special thanks to OpenAI for the inspiration and powerful LLM APIs.
